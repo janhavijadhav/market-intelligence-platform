@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: market_intelligence
+    schema: raw
+    tables:
+      - name: trades
+        description: Raw trade ticks from Kafka via Spark
+      - name: trade_metrics
+        description: Aggregated metrics computed by Spark Streaming

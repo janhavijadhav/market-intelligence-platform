@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_trades
+    description: Cleaned and validated trade ticks
+    columns:
+      - name: symbol
+        description: Stock ticker symbol
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['AAPL', 'GOOGL', 'MSFT', 'AMZN', 'TSLA']
+      - name: price
+        tests:
+          - not_null
+      - name: size
+        tests:
+          - not_null
+
+  - name: stg_trade_metrics
+    description: Cleaned trade metrics with volatility calculations
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: vwap
+        tests:
+          - not_null

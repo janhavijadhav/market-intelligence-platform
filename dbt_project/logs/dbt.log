@@ -1,0 +1,34 @@
+[0m20:07:41.004023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c3d880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cc8bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ea0b90>]}
+
+
+============================== 20:07:41.010544 | 4f29839a-8254-4c94-b050-7bf52409d509 ==============================
+[0m20:07:41.010544 [info ] [MainThread]: Running with dbt=1.11.8
+[0m20:07:41.010900 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'debug': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'printer_width': '80', 'use_colors': 'True', 'target_path': 'None', 'static_parser': 'True', 'write_json': 'True', 'fail_fast': 'False', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'invocation_command': 'dbt init market_intelligence', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'warn_error': 'None', 'profiles_dir': '/Users/janhavijadhav/.dbt', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True'}
+[0m20:07:41.021825 [info ] [MainThread]: Creating dbt configuration folder at /Users/janhavijadhav/.dbt
+[0m20:07:41.023458 [debug] [MainThread]: Starter project path: /Users/janhavijadhav/market-intelligence-platform/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:07:41.027772 [info ] [MainThread]: 
+Your new dbt project "market_intelligence" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:07:41.027969 [info ] [MainThread]: Setting up your profile.
+[0m20:08:30.169072 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:08:30.169514 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:08:30.169665 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:10:18.294396 [info ] [MainThread]: Profile market_intelligence written to /Users/janhavijadhav/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:10:18.318769 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 157.36353, "process_in_blocks": "0", "process_kernel_time": 0.194435, "process_mem_max_rss": "114950144", "process_out_blocks": "0", "process_user_time": 0.743713}
+[0m20:10:18.328716 [debug] [MainThread]: Command `dbt init` succeeded at 20:10:18.328297 after 157.38 seconds
+[0m20:10:18.330197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d73500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fb1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1142da090>]}
+[0m20:10:18.332273 [debug] [MainThread]: Flushing usage events
+[0m20:10:18.610122 [debug] [MainThread]: An error was encountered while trying to flush usage events

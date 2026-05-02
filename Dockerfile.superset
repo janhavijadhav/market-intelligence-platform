@@ -1,0 +1,9 @@
+FROM apache/superset:3.1.0
+
+USER root
+
+RUN apt-get update && apt-get install -y gcc python3-dev && \
+    pip install --upgrade pip && \
+    pip install snowflake-sqlalchemy==1.5.1 snowflake-connector-python==3.6.0
+
+ENV SUPERSET_SECRET_KEY=market_intelligence_secret_key_2026
