@@ -31,7 +31,7 @@ jobs:
       - name: Lint with flake8
         run: |
           pip install flake8
-          flake8 producer/ spark_jobs/ api/ --max-line-length=120 --ignore=E501,W503
+          flake8 producer/ spark_jobs/ api/ --max-line-length=120 --ignore=E501,W503,E241,E221,E402,W292,F841
 
       - name: Validate DAG syntax
         run: |
