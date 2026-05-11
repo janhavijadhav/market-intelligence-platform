@@ -9,7 +9,7 @@ Built with **Apache Kafka**, **PySpark Structured Streaming**, **Snowflake**, **
 ## Architecture
 
 ```
-Simulated Market Data (AAPL, GOOGL, MSFT, AMZN, TSLA)
+Simulated Market Data (Apple, Google, Microsoft, Amazon, Tesla)
                 │
                 ▼
     Apache Kafka (market.trades / market.quotes)
